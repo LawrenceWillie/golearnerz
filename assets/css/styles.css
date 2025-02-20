@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none; 
+}
+
+#landing_page{
+    position: relative;
+    overflow-x: hidden;
+/*    padding-right: 20px;
+    padding-left: 20px;*/
+    /*display: flex;
+    justify-content: center;
+    text-align: center;*/
+}
+#landing_page #time{
+    background-color: #9658;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+
+}
+#landing_page #time #clock{
+    margin-right: 20px;
+}
+
+#landing_page #time #region{
+    font-size: 16px;
+    margin-right: 20px;
+    color: white;
+}
+
+
+/****************************************LANDING PAGE TEXT**********************/
+#landing_page #landing_page_text{
+    position: relative;
+/*    display: flex;*/
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#landing_page #landing_page_text .heading{
+
+}
+
+#landing_page #landing_page_text .text{
+    position: relative;
+    margin-top: 10%;
+}
+
+/****************************************LANDING PAGE image**********************/
+#landing_page #landing_page_img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#landing_page #landing_page_img .image{
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+
+#landing_page #landing_page_img .image img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/****************************************LANDING PAGE socials**********************/
+
+#landing_page #socials {
+    position: relative;
+    /*justify-content: center;
+    display: fex;
+    align-items: center;
+    text-align: center;*/
+}
+
+#landing_page #socials ul{
+    position: relative;
+    display: fex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#landing_page #socials ul li{
+    position: relative;
+    display:inline-block ;
+
+
+}
+
+#landing_page #socials ul li a{
+    margin-left: 3rem;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#landing_page #socials ul li a:hover{
+    transform: translateY(-15px);
+    transition: 0.7s ease-out;
+    cursor: pointer;
+}
+
+#landing_page #socials ul li a i{
+    /*width: 45px;
+    height: 45px;
+    border: 1px solid black;*/
+    display: fex;/*
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+}
+
+/****************************************NAVIGATION MENU **********************/
+
+.navbar-one {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #f1f1f2;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 15px 20px rgb(0, 0, 0, 0.3);
+}
+
+.navbar-one .logo {
+    float: left;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-one .logo .logo_t{
+    position: relative;
+    font-size: 25px;
+}
+
+.navbar-one .logo i{
+    font-size: 45px;
+    color:skyblue;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/************** Large devices only ************/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/************** medium devices only ************/
+@media (min-width: 992px) and (max-width : 1199px) {
+
+}
+
+/************** medium devices only ************/
+@media (min-width: 1200px) {
+
+
+
+}
+
+@media (max-width: 1199px) { }/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+
+
+
+
+
+
+@media (min-width: 992px){
+
+/****************************************top navigation menu************************/
+.navbar-one nav {
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 30px;
+    
+}
+
+.navbar-one nav a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar-one nav .closebtn{
+    display: none;
+}
+
+.navbar-one span{
+    display: none;
+}
+
+}
+
+@media (max-width: 991px) {
+.navbar-one .openbtn{
+    float: right;
+    padding-right: 25px;
+    font-size: 28px;
+   
+}
+
+.navbar-one .openbtn:hover{
+    cursor: pointer;
+    color: #5212;
+    transition: .8s;
+
+}
+.navbar-one .sidenav {
+      height: 100%; 
+      width: 0; 
+      position: fixed;
+      z-index: 1; 
+      top: 0; 
+      right: 0;
+      background-color: #111; 
+      overflow-x: hidden; 
+      padding-top: 60px; 
+      transition: 0.5s; 
+    }
+
+.navbar-one .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar-one .sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.navbar-one .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+}
+
+/************** small devices only ************/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/**************Extra small devices only ************/
+
+@media (min-width: 768px){
+
+
+
+
+   
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+@media (min-width: 576px ){
+
+}
+
+@media (max-width: 624px) { 
+
+    
+}
+
+
+/*********** RISTRICT THE CARD SLIDER PARAGRAPGH FROM OVERLAPPING ***********/
+@media (max-width: 514px){
+
+
+}
+
+@media (max-width: 575px ){
+
+}
+
+@media (min-width: 200px ) and (max-width: 767px){
+
+}
+
+@media (min-width: 299px ) and (max-width: 460px){
+
+
+}
+
+@media (min-width: 200px ) and (max-width: 298px){
+
+}
+
+
