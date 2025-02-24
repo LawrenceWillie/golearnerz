@@ -140,50 +140,99 @@
     background-color: #f1f1f2;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 15px 20px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px #f1f1f2;
+    height:auto;
 }
+
 
 .navbar-one .logo {
-    float: left;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: center;
 
-.navbar-one .logo .logo_t{
-    position: relative;
-    font-size: 25px;
-}
-
-.navbar-one .logo i{
-    font-size: 45px;
-    color:skyblue;
 }
 
 
+.navbar-one .logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #111;
+}
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+.navbar-one .logo a i, .navbar-one .logo a span{
+    font-size: 35px;
+}
+
+
+/*********************************** FOOTER *****************************/
+.body_feet{
+    overflow-x: hidden;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 15px;
+    padding: 20px;
+}
+#footer {
     width: 100%;
+    background-color: darkgray;
+    overflow-x: hidden;
 }
 
+#footer .row{
 
 
+    
+}
 
+#footer .row section{
 
+    display: block;
+    text-align: center;
+    justify-content: center;
 
+}
 
-
-
+/* END FOOTER */
 
 /************** Large devices only ************/
 @media (min-width: 1200px) {
+     #menu-bar {
+    display: none;
+}
+.closebtn span {
+    display: none;
+}
+
+/* horizontal menu */
+.navbar-one .sidenav ul {
+    position: absolute;
+    display: flex;
+    float: right;
+    right: 3%;
+    top: 20%;
+    justify-self: center;
+}
+
+.navbar-one .sidenav ul li {
+     padding: 0 20px;
+     height: 36px;
+     
+}
+
+.navbar-one .sidenav ul li:hover {
+    border-bottom: 2px solid rgb(36, 37, 37);
+    height: 36px;
+    font-weight: bolder;
+}
+
+.navbar-one .sidenav ul li a{
+    color: rgb(36, 37, 37);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 }
@@ -201,7 +250,108 @@ footer {
 
 }
 
-@media (max-width: 1199px) { }/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+@media (max-width: 1199px) {
+
+#menu-bar{
+    float: right;
+    padding: 0;
+    /* background-color: rgb(175, 174, 103); */
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+    top: 32%;
+}
+
+#menu-bar i:hover{
+    /* background-color: rgb(175, 174, 103); */
+    font-size: 25px;
+}
+
+.sidenav {
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; /*stay on top*/
+    top: 0; /*stay at the top*/
+    right: 0;
+    background-color: rgb(255, 255, 255); 
+    overflow-x: hidden; /*disable scroll bar*/
+    padding-top: 60px; /**/
+    transition: 1s;
+    border-radius: 10px 0px 0px 0px;
+    border-left: 1px solid goldenrod;
+    
+}
+
+.sidenav ul {
+    height: 250px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+ 
+    
+}
+
+.sidenav ul li{
+    padding-top: 50px;
+    
+}
+
+.sidenav ul li a {
+    color: rgb(66, 62, 50);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.sidenav ul li a:hover {
+  color: rgb(206, 177, 90);
+  text-decoration: none;
+  transition: .5s;
+}
+
+
+.sidenav .closebtn span{
+    color: rgb(214, 99, 99);
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    cursor: pointer;
+    transition: .7s;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.sidenav .closebtn span:hover {
+    color: rgb(226, 43, 43);
+    font-size: 35px
+}
+
+.sidenav ul .reg button{
+  width: 180px;
+}
+
+.sidenav ul .reg button{
+  border-radius: 2rem;
+  padding: 8px;
+}
+
+.sidenav ul .reg button:hover{
+  background-color: rgb(204, 198, 198);
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+ }/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
 
 
 
@@ -212,7 +362,7 @@ footer {
 @media (min-width: 992px){
 
 /****************************************top navigation menu************************/
-.navbar-one nav {
+/*.navbar-one nav {
     position: relative;
     float: right;
     display: flex;
@@ -234,57 +384,36 @@ footer {
 
 .navbar-one span{
     display: none;
-}
+}*/
 
 }
 
 @media (max-width: 991px) {
-.navbar-one .openbtn{
-    float: right;
-    padding-right: 25px;
-    font-size: 28px;
-   
-}
 
-.navbar-one .openbtn:hover{
-    cursor: pointer;
-    color: #5212;
-    transition: .8s;
+.navbar-one .logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  float: none;
 
 }
-.navbar-one .sidenav {
-      height: 100%; 
-      width: 0; 
-      position: fixed;
-      z-index: 1; 
-      top: 0; 
-      right: 0;
-      background-color: #111; 
-      overflow-x: hidden; 
-      padding-top: 60px; 
-      transition: 0.5s; 
-    }
 
-.navbar-one .sidenav a {
-  padding: 8px 8px 8px 32px;
+
+.navbar-one .logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  color: #111;
+    text-align: center;
 }
 
-.navbar-one .sidenav a:hover {
-    color: #f1f1f1;
+.navbar-one .logo a i, .navbar-one .logo a span{
+    font-size: 30px;
 }
 
-.navbar-one .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
 
 
 
@@ -293,6 +422,12 @@ footer {
 /************** small devices only ************/
 @media (min-width: 768px) and (max-width: 991px) {
 
+    #footer section hr {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
 
 }
 
@@ -300,18 +435,100 @@ footer {
 
 @media (min-width: 768px){
 
+  .navbar-one section {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+    
 
+  .navbar-one section hr {
+    width: 100%;
+    margin: 0 auto;
+
+  }
 
 
    
 }
 
 @media (max-width: 767px) {
+/****************************************Socials*******************/
+
+#landing_page #socials ul{
+    position: relative;
+    display: fex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#landing_page #socials ul li{
+    position: relative;
+    display:inline-block ;
+
+
+
+}
+
+#landing_page #socials ul li a{
+    margin-left: 1rem;
+    display: flex;
+    width: 38px;
+    height: 38px;
+    border: .5px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#landing_page #socials ul li a:hover{
+    transform: translateY(-15px);
+    transition: 0.7s ease-out;
+    cursor: pointer;
+}
+
+#landing_page #socials ul li a i{
+    /*width: 45px;
+    height: 45px;
+    border: 1px solid black;*/
+    display: fex;/*
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+}
+
+/*************************logo********************/
+
+     /* Footer */
+  .navbar-one section {
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .navbar-one section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+
+  .navbar-one section hr {
+    width: 100%;
+    margin: 0 auto;
+
+  }
 
 
 }
 
 @media (min-width: 576px ){
+
+    .navbar-one section hr {
+        width: 50%;
+        margin: 0 auto;
+        display: none;
+      }
 
 }
 
