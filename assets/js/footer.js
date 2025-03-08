@@ -3,8 +3,10 @@ console.log("footer.js is loaded!");
 function loadFooter() {
     console.log("loadFooter function is called!");
     document.getElementById("footer").innerHTML = `
-        <footer>
-            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
-        </footer>
+
+            
+        
+            <div class="text-center">&copy;<a href="index.html" >Sunrise Academy pty Ltd 2025</a></div>
+            
     `;
 }
