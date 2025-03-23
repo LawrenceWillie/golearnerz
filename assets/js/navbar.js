@@ -1,7 +1,7 @@
 function loadNavbar() {
     document.getElementById("navbar").innerHTML = `
         <div class="logo">
-            <a href="index.html">
+            <a href="../index.html">
                 <i class="fas fa-book"></i><span> Golearners</span>
             </a>
 
@@ -11,8 +11,8 @@ function loadNavbar() {
             <a  class="closebtn" onclick="closeNav()"><span>&times;<span></a>
               
               <ul>
-                  <li id="navHomeButton" class="active"><a href="index.html">Home</a></li>
-                  <li id="navMenuButton" ><a href="menu.html">Blog</a></li>
+                  <li id="navHomeButton" class="active"><a href="../index.html">Home</a></li>
+                  <li id="navMenuButton" ><a href="">Blog</a></li>
                   <li><a href="#">study Quides</a></li>
                   <li><a href="#">Exam papers</a></li>
                   <li><a href="#">Tutoring</a></li>

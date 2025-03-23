@@ -6,7 +6,26 @@ function loadFooter() {
 
             
         
-            <div class="text-center">&copy;<a href="index.html" >Sunrise Academy pty Ltd 2025</a></div>
-            
+          <div class="row">
+            <div id="footer_divs" class="col-lg-4 col-md-12 col-md-12">
+                <div class="more_sites">
+                    <h1>more educational webs</h1>   
+                </div>
+            </div> 
+            <div id="footer_divs" class="col-lg-4 col-md-12 col-md-12">
+                <div class="more_sites">
+                    <h1>location</h1>   
+                </div>
+            </div> 
+            <div id="footer_divs" class="col-lg-4 col-md-12 col-md-12">
+                <div class="more_sites">
+                    <h1>Social Media</h1>   
+                </div>
+            </div> 
+            <div id="footer_divs" class="col-lg-12 col-md-12 col-md-12">
+                <a href="index.html"><span>&copy</span>chapterbychapter 2025</a>
+            </div
+
+        </div>
     `;
 }
