@@ -280,13 +280,89 @@ a{
     color: white;
 }
 
-.container .row .grades .gr-name{
+.container .row .grades .gr_name{
     font-size: 20px;
     color: lightslategray;
     font-stretch: ultra-condensed;
 }
 
+/************************************Exam time stamp*********************************/
 
+.countdown-container {
+    position: relative;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 45px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+  width:120px;
+  height:120px;
+}
+
+.background-circle {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 10;
+}
+
+.progress-circle-bar {
+  fill: none;
+  stroke: #00b0ff;
+  stroke-width: 10;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.progress-circle-bar .current_stamp{
+  position: absolute;
+}
+
+.count {
+  position: absolute;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#days-circle .count, #hours-circle .count,
+#minutes-circle .count {
+ 
+/*  margin-top: 10px;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 15px;
+
+}
 
 
 
@@ -302,6 +378,9 @@ a{
     width: 100%;
     background-color: lightgray;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #footer .row{
