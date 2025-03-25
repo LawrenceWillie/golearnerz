@@ -289,7 +289,7 @@ a{
 /************************************Exam time stamp*********************************/
 
 .countdown-container {
-    position: relative;
+      position: relative;
       display: flex;
       gap: 15px;
       justify-content: center;
@@ -299,8 +299,48 @@ a{
       margin-bottom: 45px;
       overflow-x: hidden;
       overflow-y: hidden;
+      height: auto;
+      padding: 0;
+}
+
+
+.guide{
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.guide .c_green, .guide .c_red{
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
+
+.guide .c_green span, .guide .c_red span {
+    position: relative;
+    float: left;
+    font-size: 12px;
+}
+ .guide .c_red .red,.guide .c_green .green{
+    margin-top: 10px;
+    height: 1.5%;
+    width: 10%;
+    border-radius: 10px;
+
+}
+
+
+ .guide .c_green .green{
+    background-color: seagreen;
+}
+.guide .c_red .red{
+    background-color: red;
+}
+
 
 .circle {
   position: relative;
