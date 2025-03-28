@@ -13,7 +13,7 @@ function loadNavbar() {
               <ul>
                   <li id="navHomeButton" class="active"><a href="../index.html">Home</a></li>
                   <li id="navMenuButton" ><a href="">Blog</a></li>
-                  <li><a href="#">study Quides</a></li>
+                  <li><a href="templates/home.html">study Quides</a></li>
                   <li><a href="#">Exam papers</a></li>
                   <li><a href="#">Tutoring</a></li>
                   <li><a href="#">Contact Us</a></li>
