@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/fontAwesome/css/all.css" />
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <title>Sunrise Academy</title>
+    </head>
+    <body>
+    <h1>Create an Account</h1>
+    <form method="POST" action="{{ url_for('signin') }}">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}<br>
+        {{ form.email.label }} {{ form.email() }}<br>
+        {{ form.phone.label }} {{ form.phone() }}<br>
+        {{ form.password.label }} {{ form.password() }}<br>
+        {{ form.password_confirm.label }} {{ form.password_confirm() }}<br>
+        <button type="submit">Sign Up</button>
+
+
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+    </form>
+</body>
+</html>
